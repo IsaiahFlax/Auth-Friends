@@ -45,7 +45,9 @@ class Friends extends React.Component {
     
     const onSubmit = e => {
       e.preventDefault();
-      console.log(this.state.newFriend.name)
+      axiosWithAuth().post('/api/friends', this.state.newFriend).then(res=>{
+        this.setState({friends: res.data})
+      })
     }
     const handleChange = friend => {
       this.setState({
