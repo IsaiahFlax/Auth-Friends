@@ -11,6 +11,8 @@ import Login from "./components/Login";
 import Friends from "./components/Friends";
 import PrivateRoute from "./components/PrivateRoute";
 
+import './App.css'
+
 function App() {
   return (
     <Router>

@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+.friend-card{
+  padding: 10px;
+}
+.friends {
+  display: flex;
+}
